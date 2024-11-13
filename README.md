@@ -3,30 +3,26 @@
 ### Key Features:
 Spotify API Integration:
 
-Music Playback: Users can listen to music in real-time via their Spotify account, selecting their favorite songs, playlists, or albums.
-Basic Controls: Participants can play, pause, and skip songs in the room.
-Room Creation and Management:
+- Music Playback: Users can listen to music in real-time via their Spotify account, selecting their favorite songs, playlists, or albums.
 
-Users can create a new music room, where they can invite others to join.
-The app generates a unique link for each room, which users can share with friends or others to join the session.
-Join Rooms:
+- Basic Controls: Participants can play, pause, and skip songs in the room.
 
-Users can join existing rooms via the link provided by the room creator.
+- Room Creation and Management: Users can create a new music room, where they can invite others to join. The app generates a unique link for each room, which users can share with friends or others to join the session.
+
+- Join Rooms: Users can join existing rooms via the link provided by the room creator.
 Once inside, participants can interact with other members and share control over the music.
-Voting to Skip or Pause Songs:
 
-All room members can vote to skip a song, change to a new one, or pause the ongoing music.
+- Voting to Skip or Pause Songs: All room members can vote to skip a song, change to a new one, or pause the ongoing music.
 The voting system ensures that decisions are made democratically, fostering interaction among users.
 Collaborative User Interface:
 
-Live Chat: Users can interact through a live chat while listening to music together.
-Shared Playlist: Users can view and add songs to the shared queue, enabling collaboration in song selection.
-Room Host Controls:
+- Live Chat: Users can interact through a live chat while listening to music together.
 
-The room creator has additional privileges to manage the music session, such as deciding when to end the session or remove participants if necessary.
-Real-Time Synchronization:
+- Shared Playlist: Users can view and add songs to the shared queue, enabling collaboration in song selection.
 
-All actions, such as playing, pausing, or skipping songs, are synchronized in real time across all participants in the room, ensuring everyone is listening to the same song at the same time.
+- Room Host Controls: The room creator has additional privileges to manage the music session, such as deciding when to end the session or remove participants if necessary.
+
+- Real-Time Synchronization: All actions, such as playing, pausing, or skipping songs, are synchronized in real time across all participants in the room, ensuring everyone is listening to the same song at the same time.
 
 ### Usage Flow:
 Create a Room: A user creates a room and gives it a name. The app generates a unique link for inviting others.
