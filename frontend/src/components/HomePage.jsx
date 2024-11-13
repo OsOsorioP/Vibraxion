@@ -29,6 +29,11 @@ export const HomePage = () => {
               <Help fontSize="large" />
             </IconButton>
           </Grid2>
+          <Grid2 item size={{ xs: 12 }} align="center">
+            <Typography fontSize={'small'} color="error" align="center">
+            NOTE: The Spotify API does not allow pausing or skipping songs unless you have a premium account.
+            </Typography>
+          </Grid2>
         </Grid2>
       </>
     );

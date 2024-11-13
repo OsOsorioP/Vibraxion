@@ -12,10 +12,18 @@ export const Info = () => {
     const [page, setPage] = useState(pages.JOIN);
 
     function joinInfo() {
-        return 'Join Page'
+        return (
+            <p>
+                is a collaborative web music application that allows users to share and enjoy music sessions in real time. By integrating with the Spotify API, Vibraxion enables users to select and play songs while offering unique features like creating rooms, joining sessions, voting, or pausing the music.
+            </p>
+        )
     }
     function createInfo() {
-        return 'Create Page'
+        return (
+            <p>
+                Create a room, choose whether participants can pause the music or not, and set the number of votes required to skip a song. Finally, share the code with your friends or family.
+            </p>
+        )
     }
 
     useEffect(() => {
