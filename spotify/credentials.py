@@ -1,3 +1,6 @@
-CLIENT_ID = "b496fc75c22f48f9bb9137cc4ff9b506"
-CLIENT_SECRET = "739dc0b01c3441e185b7c25be010c9e5"
-REDIRECT_URI = "https://vibraxion.onrender.com/spotify/redirect"
+import os
+
+DATABASE_URL = os.getenv("DATABASE_URL")
+CLIENT_ID = os.getenv("CLIENT_ID")
+CLIENT_SECRET = os.getenv("CLIENT_SECRET")
+REDIRECT_URI = os.getenv("REDIRECT_URI")
