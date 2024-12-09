@@ -1,0 +1,157 @@
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  width: 100vw;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background: linear-gradient(45deg, #27d9e6, #27e6b2, #27e672, #57e1eb);
+  background-size: 400% 400%;
+  animation: gradientAnimation 12s ease infinite;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.border {
+  border-radius: 4px;
+}
+
+.bounce {
+  height: 33px;
+  overflow: hidden;
+  display: flex;
+  user-select: none;
+  --gap: 5px;
+  gap: var(--gap);
+}
+
+.bounce ul {
+  list-style: none;
+  flex-shrink: 0;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap);
+
+  animation: scroll 20s linear infinite;
+}
+
+.bounce:hover ul {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+.spotify_explicit {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.loader {
+  width: 40px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #ed303c 94%, #0000),
+    radial-gradient(farthest-side, #3b8183 94%, #0000),
+    radial-gradient(farthest-side, #fad089 94%, #0000),
+    radial-gradient(farthest-side, #ff9c5b 94%, #0000), #ed303c;
+  background-size: 105% 105%;
+  background-repeat: no-repeat;
+  animation: l5 2s infinite;
+}
+@keyframes l5 {
+  0% {
+    background-position: 50% -50px, -40px 50%, 50% calc(100% + 50px),
+      calc(100% + 50px) 50%;
+  }
+  20%,
+  25% {
+    background-position: 50% -50px, -50px 50%, 50% calc(100% + 50px), 50% 50%;
+  }
+  45%,
+  50% {
+    background-position: 50% -50px, -50px 50%, 50% 50%, 50% 50%;
+  }
+  75%,
+  75% {
+    background-position: 50% -50px, 50% 50%, 50% 50%, 50% 50%;
+  }
+  95%,
+  100% {
+    background-position: 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+  }
+}
+
+.title {
+  color: hsl(0, 0%, 0%);
+  font: normal 40px Varela Round, sans-serif;
+  letter-spacing: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  animation: move linear 7000ms infinite;
+}
+
+@keyframes move {
+  0% {
+    text-shadow: 4px -4px 0 rgb(75, 0, 130), 3px -3px 0 rgb(75, 0, 130),
+      2px -2px 0 rgb(75, 0, 130), 1px -1px 0 rgb(75, 0, 130),
+      -4px 4px 0 rgb(255, 255, 0), -3px 3px 0 rgb(255, 255, 0),
+      -2px 2px 0 rgb(255, 255, 0), -1px 1px 0 rgb(255, 255, 0);
+  }
+  25% {
+    text-shadow: -4px -4px 0 rgb(255, 255, 0), -3px -3px 0 rgb(255, 255, 0),
+      -2px -2px 0 rgb(255, 255, 0), -1px -1px 0 rgb(255, 255, 0),
+      4px 4px 0 rgb(75, 0, 130), 3px 3px 0 rgb(75, 0, 130),
+      2px 2px 0 rgb(75, 0, 130), 1px 1px 0 rgb(75, 0, 130);
+  }
+  50% {
+    text-shadow: -4px 4px 0 rgb(75, 0, 130), -3px 3px 0 rgb(75, 0, 130),
+      -2px 2px 0 rgb(75, 0, 130), -1px 1px 0 rgb(75, 0, 130),
+      4px -4px 0 rgb(255, 255, 0), 3px -3px 0 rgb(255, 255, 0),
+      2px -2px 0 rgb(255, 255, 0), 1px -1px 0 rgb(255, 255, 0);
+  }
+  75% {
+    text-shadow: 4px 4px 0 rgb(255, 255, 0), 3px 3px 0 rgb(255, 255, 0),
+      2px 2px 0 rgb(255, 255, 0), 1px 1px 0 rgb(255, 255, 0), -4px -4px 0,
+      -3px -3px 0, -2px -2px 0, -1px -1px 0;
+  }
+  100% {
+    text-shadow: 4px -4px 0 rgb(75, 0, 130), 3px -3px 0 rgb(75, 0, 130),
+      2px -2px 0 rgb(75, 0, 130), 1px -1px 0 rgb(75, 0, 130),
+      -4px 4px 0 rgb(255, 255, 0), -3px 3px 0 rgb(255, 255, 0),
+      -2px 2px 0 rgb(255, 255, 0), -1px 1px 0 rgb(255, 255, 0);
+  }
+}
